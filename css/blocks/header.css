@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--main-color);
+  padding-block: 7px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link-logo {
+  flex-shrink: 0;
+}
+
+@media (width <= 992px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__link-logo {
+    margin-right: auto;
+  }
+}
