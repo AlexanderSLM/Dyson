@@ -1,0 +1,37 @@
+.hero {
+  background-color: var(--bg-color);
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__text {
+  margin-top: 250px;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+}
+
+.hero__description {
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--main-color);
+  margin-bottom: 90px;
+}
+
+.hero__button {
+  color: var(--second-color);
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  padding: 16px 52px;
+  font-size: 24px;
+  transition: background-color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .hero__button:hover {
+    background-color: #aa2e78;
+  }
+}

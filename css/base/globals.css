@@ -13,3 +13,11 @@ button:focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
+
+.title-medium {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 103%;
+  color: var(--main-color);
+}
