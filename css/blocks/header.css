@@ -9,6 +9,27 @@
   justify-content: space-between;
 }
 
+.header__button-burger,
+.header__button-cart {
+  color: var(--second-color);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .header__button-burger:hover,
+  .header__button-cart:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header__burger-icon {
+  stroke: currentColor;
+}
+
+.header__cart-icon {
+  stroke: currentColor;
+}
+
 .header__link-logo {
   flex-shrink: 0;
 }

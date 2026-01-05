@@ -4,34 +4,96 @@
 
 .hero__container {
   display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-.hero__text {
-  margin-top: 250px;
+@media (width > 768px) {
+  .hero__text {
+    margin-top: 250px;
+    margin-bottom: 224px;
+    max-width: 570px;
+    flex-shrink: 0;
+  }
 }
 
-.hero__title {
-  margin-bottom: 40px;
+@media (width <= 768px) {
+  .hero__text {
+    margin-top: 80px;
+    margin-bottom: 121px;
+  }
+}
+
+@media (width > 768px) {
+  .hero__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__title {
+    margin-bottom: 16px;
+  }
 }
 
 .hero__description {
-  font-size: 18px;
   line-height: 140%;
   color: var(--main-color);
-  margin-bottom: 90px;
+}
+
+@media (width > 768px) {
+  .hero__description {
+    font-size: 18px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 
 .hero__button {
   color: var(--second-color);
   background-color: var(--accent-color);
   border-radius: 3px;
-  padding: 16px 52px;
-  font-size: 24px;
   transition: background-color var(--transition-time);
+}
+
+@media (width > 768px) {
+  .hero__button {
+    padding: 16px 52px;
+    font-size: 24px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__button {
+    padding: 7px 27px;
+    font-size: 16px;
+  }
+}
+
+@media (width > 992px) {
+  .hero__description {
+    font-size: 16px;
+  }
 }
 
 @media (any-hover: hover) {
   .hero__button:hover {
     background-color: #aa2e78;
+  }
+}
+
+.hero__img {
+  transform: translateY(2px);
+}
+
+@media (width <= 992px) {
+  .hero__img {
+    display: none;
   }
 }

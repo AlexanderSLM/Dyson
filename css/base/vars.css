@@ -9,6 +9,9 @@
   --accent-color: #c5358c;
   --bg-color: #dddddd;
 
+  /* box-shadows */
+  --box-shadow: 0 4px 41px 0 #0000000d;
+
   /* transition */
   --transition-time: 0.2s;
 

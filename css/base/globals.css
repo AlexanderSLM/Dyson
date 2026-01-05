@@ -14,10 +14,37 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-.title-medium {
+.title-medium,
+.title-light {
   font-family: var(--second-family);
   font-weight: 900;
+}
+
+.title-medium {
   font-size: 46px;
   line-height: 103%;
-  color: var(--main-color);
+}
+
+.title-light {
+  font-size: 30px;
+}
+
+@media (width > 768px) {
+  .title-medium {
+    font-size: 46px;
+  }
+
+  .title-light {
+    font-size: 30px;
+  }
+}
+
+@media (width <= 768px) {
+  .title-medium {
+    font-size: 30px;
+  }
+
+  .title-light {
+    font-size: 24px;
+  }
 }
