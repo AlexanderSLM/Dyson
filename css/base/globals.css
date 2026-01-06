@@ -15,23 +15,23 @@ button:focus-visible {
 }
 
 .title-medium,
+.title-regular,
 .title-light {
   font-family: var(--second-family);
   font-weight: 900;
 }
 
 .title-medium {
-  font-size: 46px;
   line-height: 103%;
-}
-
-.title-light {
-  font-size: 30px;
 }
 
 @media (width > 768px) {
   .title-medium {
     font-size: 46px;
+  }
+
+  .title-regular {
+    font-size: 42px;
   }
 
   .title-light {
@@ -41,6 +41,10 @@ button:focus-visible {
 
 @media (width <= 768px) {
   .title-medium {
+    font-size: 32px;
+  }
+
+  .title-regular {
     font-size: 30px;
   }
 
